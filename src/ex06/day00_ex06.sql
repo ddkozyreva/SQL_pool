@@ -5,15 +5,15 @@ SELECT (
         person 
     WHERE 
         id = person_order.person_id
-    ) 
-    AS name,
+    ) AS name,
     (
     SELECT 
-    case when name = 'Denis' then 'true' 
-    else 'false' 
-    end
+    CASE 
+        WHEN name = 'Denis' THEN 'true' 
+        ELSE 'false' 
+    END
     FROM 
-    person
+        person
     WHERE 
         id = person_order.person_id
     ) AS check_name
