@@ -1,1 +1,6 @@
-select name, age from person where address = 'Kazan';
+SELECT 
+    name, age 
+FROM 
+    person 
+WHERE
+    address = 'Kazan';
