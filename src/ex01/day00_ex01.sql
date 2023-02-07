@@ -1,6 +1,8 @@
 SELECT
-    name, age 
-FROM 
-    person 
+    name,
+    age
+FROM
+    person
 WHERE
-    address = 'Kazan' AND gender = 'female';
+    address = 'Kazan'
+    AND gender = 'female';

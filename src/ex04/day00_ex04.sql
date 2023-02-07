@@ -1,5 +1,15 @@
-SELECT 
-    concat(name, ' (age:', age, ',gender:''', gender, ''',address:''',address,''')') 
+SELECT
+    concat(
+        name,
+        ' (age:',
+        age,
+        ',gender:''',
+        gender,
+        ''',address:''',
+        address,
+        ''')'
+    )
 FROM
     person
-ORDER BY name;
+ORDER BY
+    name;
