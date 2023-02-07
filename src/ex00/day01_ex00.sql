@@ -10,5 +10,8 @@ SELECT
 FROM 
     person
 ORDER BY 
-    object_id ASC, 
-    object_name ASC;
+    object_id, 
+    object_name;
+
+
+
