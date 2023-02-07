@@ -8,8 +8,8 @@ SELECT
         ''',address:''',
         address,
         ''')'
-    )
+    ) AS person_information
 FROM
     person
 ORDER BY
-    name;
+    person_information;

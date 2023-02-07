@@ -10,8 +10,8 @@ SELECT
     (
         SELECT
             CASE
-                WHEN name = 'Denis' THEN 'true'
-                ELSE 'false'
+                WHEN name = 'Denis' THEN true
+                ELSE false
             END
         FROM
             person

@@ -6,7 +6,7 @@ SELECT
             person
         WHERE
             id = pv.person_id
-    ) AS name,
+    ) AS person_name,
     (
         SELECT
             name
@@ -14,7 +14,7 @@ SELECT
             pizzeria
         WHERE
             id = pv.pizzeria_id
-    ) AS pizzeria
+    ) AS pizzeria_name
 FROM
     (
         SELECT
@@ -27,5 +27,5 @@ FROM
             AND '2022-01-09'
     ) AS pv
 ORDER BY
-    name ASC,
-    pizzeria DESC;
+    person_name ASC,
+    pizzeria_name DESC;

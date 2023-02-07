@@ -5,4 +5,6 @@ FROM
     person
 WHERE
     address = 'Kazan'
-    AND gender = 'female';
+    AND gender = 'female'
+ORDER BY
+    name;
