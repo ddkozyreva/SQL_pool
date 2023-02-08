@@ -1,9 +1,9 @@
 SELECT
     d :: date AS date
-from
+FROM
     generate_series(
-        timestamp without time zone '2022-01-01',
-        timestamp without time zone '2022-01-10',
+        timestamp '2022-01-01',
+        timestamp '2022-01-10',
         '1 day'
     ) as gs(d)
     LEFT JOIN (
