@@ -1,6 +1,5 @@
 (
     SELECT
-        order_date AS action_date,
         person_id
     FROM
         person_order
@@ -10,7 +9,6 @@
 EXCEPT
     ALL (
         SELECT
-            visit_date,
             person_id
         FROM
             person_visits
