@@ -6,7 +6,7 @@ WITH tmp AS (
             timestamp '2022-01-01',
             timestamp '2022-01-10',
             '1 day'
-        ) as gs(d)
+        ) AS gs(d)
 )
 SELECT
     date
