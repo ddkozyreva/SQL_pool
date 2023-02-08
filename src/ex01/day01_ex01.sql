@@ -1,6 +1,6 @@
 (
     SELECT
-        name
+        name AS object_name
     FROM
         person
     ORDER BY
@@ -13,5 +13,5 @@ ALL (
     FROM
         menu
     ORDER BY
-        object_name
+        pizza_name
 );
