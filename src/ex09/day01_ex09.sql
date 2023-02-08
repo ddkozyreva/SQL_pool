@@ -1,5 +1,5 @@
 SELECT
-    *
+    name as pizzeria_name
 FROM
     pizzeria
 WHERE
