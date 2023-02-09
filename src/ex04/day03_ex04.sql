@@ -24,7 +24,7 @@ tmp_men AS (
     WHERE
         gender = 'male'
 ),
-fem_only AS (
+fem_often AS (
     SELECT
         name
     FROM
@@ -35,7 +35,7 @@ fem_only AS (
     FROM
         tmp_men
 ),
-male_only AS (
+male_often AS (
     SELECT
         name
     FROM
@@ -49,14 +49,14 @@ male_only AS (
     SELECT
         name AS pizzeria_name
     FROM
-        fem_only
+        fem_often
 )
 UNION
 (
     SELECT
         name
     FROM
-        male_only
+        male_often
 )
 ORDER BY
     pizzeria_name;
