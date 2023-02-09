@@ -47,7 +47,7 @@ male_often AS (
         tmp_fem
 ) (
     SELECT
-        name
+        name AS pizzeria_name
     FROM
         fem_often
 )
@@ -59,4 +59,4 @@ UNION
         male_often
 )
 ORDER BY
-    name;
+    pizzeria_name;

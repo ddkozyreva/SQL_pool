@@ -1,6 +1,6 @@
 (
     SELECT
-        id
+        id AS menu_id
     FROM
         menu
 )
@@ -12,4 +12,4 @@ EXCEPT
             person_order
     )
 ORDER BY
-    id;
+    menu_id;
