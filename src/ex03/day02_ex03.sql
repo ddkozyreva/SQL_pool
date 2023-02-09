@@ -9,7 +9,7 @@ WITH tmp AS (
         ) AS gs(d)
 )
 SELECT
-    date
+    date AS missing_date
 FROM
     tmp
     LEFT JOIN (

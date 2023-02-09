@@ -1,5 +1,5 @@
 SELECT
-    d :: date AS date
+    d :: date AS missing_date
 FROM
     generate_series(
         timestamp '2022-01-01',
@@ -18,4 +18,4 @@ FROM
 WHERE
     id IS NULL
 ORDER BY
-    date;
+    missing_date;
