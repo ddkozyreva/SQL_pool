@@ -10,6 +10,6 @@ FROM
     JOIN pizzeria piz2 ON piz2.id = m2.pizzeria_id
 WHERE
     m1.price = m2.price
-    AND m1.pizzeria_id != m2.pizzeria_id
+    AND m1.pizzeria_id > m2.pizzeria_id
 ORDER BY
     pizza_name;
