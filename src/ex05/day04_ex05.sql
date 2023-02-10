@@ -3,7 +3,7 @@ SELECT
     p.name,
     m.pizza_name,
     m.price,
-    CAST(0.9 * price AS INT) AS discount_price
+    round(CAST(0.9 * price AS NUMERIC), 0) AS discount_price
 FROM
     person_order po
     JOIN person p ON p.id = po.person_id
