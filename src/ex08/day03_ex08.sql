@@ -17,5 +17,5 @@ VALUES
                 name = 'Dominos'
         ),
         'sicilian pizza',
-        800
+        900
     );

@@ -20,3 +20,5 @@ EXCEPT
         WHERE
             p.name = 'Andrey'
     )
+ORDER BY
+    pizzeria_name;
