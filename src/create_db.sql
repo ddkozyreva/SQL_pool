@@ -55,9 +55,11 @@ VALUES
     ('C', 'D', 30);
 
 INSERT INTO
+    routes
 VALUES
     ('C', 'B', 35);
 
 INSERT INTO
+    routes
 VALUES
     ('B', 'C', 35);
