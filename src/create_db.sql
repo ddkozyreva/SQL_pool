@@ -7,59 +7,59 @@ CREATE TABLE routes (
 INSERT INTO
     routes
 VALUES
-    ('A', 'B', 10);
+    ('a', 'b', 10);
 
 INSERT INTO
     routes
 VALUES
-    ('B', 'A', 10);
+    ('b', 'a', 10);
 
 INSERT INTO
     routes
 VALUES
-    ('A', 'C', 15);
+    ('a', 'c', 15);
 
 INSERT INTO
     routes
 VALUES
-    ('C', 'A', 15);
+    ('c', 'a', 15);
 
 INSERT INTO
     routes
 VALUES
-    ('A', 'D', 20);
+    ('a', 'd', 20);
 
 INSERT INTO
     routes
 VALUES
-    ('D', 'A', 20);
+    ('d', 'a', 20);
 
 INSERT INTO
     routes
 VALUES
-    ('B', 'D', 25);
+    ('b', 'd', 25);
 
 INSERT INTO
     routes
 VALUES
-    ('D', 'B', 25);
+    ('d', 'b', 25);
 
 INSERT INTO
     routes
 VALUES
-    ('D', 'C', 30);
+    ('d', 'c', 30);
 
 INSERT INTO
     routes
 VALUES
-    ('C', 'D', 30);
+    ('c', 'd', 30);
 
 INSERT INTO
     routes
 VALUES
-    ('C', 'B', 35);
+    ('c', 'b', 35);
 
 INSERT INTO
     routes
 VALUES
-    ('B', 'C', 35);
+    ('b', 'c', 35);

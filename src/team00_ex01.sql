@@ -33,7 +33,8 @@ final_routes AS (
     WHERE
         char_length(find_path.route) = 8
     ORDER BY
-        total_cost, tour
+        total_cost,
+        tour
 )
 SELECT
     total_cost,
@@ -42,8 +43,16 @@ FROM
     final_routes
 WHERE
     total_cost IN (
-        SELECT
-            min(total_cost)
-        FROM
-            final_routes
+        (
+            SELECT
+                min(total_cost)
+            FROM
+                final_routes
+        ),
+        (
+            SELECT
+                max(total_cost)
+            FROM
+                final_routes
+        )
     );
