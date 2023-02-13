@@ -4,7 +4,7 @@ SET
 EXPLAIN ANALYZE
 SELECT
     m.pizza_name,
-    pi.name
+    piz.name
 FROM
     menu m
-    JOIN pizzeria pi ON m.pizzeria_id = pi.id;
+    JOIN pizzeria piz ON m.pizzeria_id = piz.id;
