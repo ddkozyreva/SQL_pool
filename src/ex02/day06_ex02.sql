@@ -2,11 +2,11 @@ SELECT
     p.name,
     pizza_name,
     price,
-    CAST(
-        price * ((100 - floor(pd.discount)) / 100) as int
+    round(
+        price * ((100 - pd.discount) / 100),
+        0
     ) AS discount_price,
-    pd.discount,
-    pz.name
+    pz.name AS pizzeria_name
 FROM
     person_discounts pd
     INNER JOIN pizzeria pz ON pz.id = pd.pizzeria_id

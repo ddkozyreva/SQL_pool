@@ -6,7 +6,7 @@ WITH tmp AS (
         (
             CASE
                 WHEN COUNT(*) = 1 THEN 10.5
-                WHEN COUNT(*) = 2 THEN 22.5
+                WHEN COUNT(*) = 2 THEN 22
                 ELSE 30
             END
         ) AS discount
