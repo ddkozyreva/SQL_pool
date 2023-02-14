@@ -15,14 +15,3 @@ FROM
 ORDER BY
     p.name,
     pizza_name;
-
-SELECT
-    p.name,
-    pd.discount,
-    pz.name
-FROM
-    person_discounts pd
-    INNER JOIN pizzeria pz ON pz.id = pd.pizzeria_id
-    INNER JOIN person p ON p.id = pd.person_id
-ORDER BY
-    p.name;

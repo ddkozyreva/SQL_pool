@@ -1,6 +1,6 @@
 WITH tmp AS (
     SELECT
-        p.id AS person_id,
+        person_id,
         pizzeria_id,
         COUNT(*) AS count,
         (
@@ -11,11 +11,10 @@ WITH tmp AS (
             END
         ) AS discount
     FROM
-        person p
-        INNER JOIN person_order po ON po.person_id = p.id
+        person_order po
         INNER JOIN menu m ON m.id = po.menu_id
     GROUP BY
-        p.id,
+        person_id,
         pizzeria_id
     ORDER BY
         person_id
