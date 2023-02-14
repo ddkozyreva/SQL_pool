@@ -7,7 +7,8 @@ SET
 
 EXPLAIN ANALYZE
 SELECT
-    *
+    person_id,
+    menu_id
 FROM
     person_order
 WHERE
