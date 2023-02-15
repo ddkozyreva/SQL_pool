@@ -7,6 +7,8 @@ WITH visits AS (
         INNER JOIN person p ON p.id = pv.person_id
     GROUP BY
         p.name
+    HAVING
+        count(*) > 3
     ORDER BY
         count_of_visits DESC,
         p.name ASC
@@ -14,6 +16,4 @@ WITH visits AS (
 SELECT
     *
 FROM
-    visits
-WHERE
-    count_of_visits > 3;
+    visits;
