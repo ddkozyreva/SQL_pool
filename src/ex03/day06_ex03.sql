@@ -10,4 +10,5 @@ SELECT
 FROM
     person_discounts
 WHERE
-    person_id = '4';
+    person_id = 4
+    AND pizzeria_id = 5;

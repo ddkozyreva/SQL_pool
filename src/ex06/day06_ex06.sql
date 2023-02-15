@@ -5,7 +5,7 @@ SELECT
         'seq_person_discounts',
         (
             SELECT
-                count(id)
+                max(id)
             FROM
                 person_discounts
         )

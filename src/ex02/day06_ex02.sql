@@ -8,10 +8,12 @@ SELECT
     ) AS discount_price,
     pz.name AS pizzeria_name
 FROM
-    person_discounts pd
-    INNER JOIN pizzeria pz ON pz.id = pd.pizzeria_id
-    INNER JOIN person p ON p.id = pd.person_id
-    INNER JOIN menu m ON m.pizzeria_id = pz.id
+    person_order po
+    INNER JOIN person p ON p.id = po.person_id
+    INNER JOIN menu m ON m.id = po.menu_id
+    INNER JOIN pizzeria pz ON pz.id = m.pizzeria_id
+    INNER JOIN person_discounts pd ON pd.person_id = p.id
+    AND pd.pizzeria_id = pz.id
 ORDER BY
     p.name,
     pizza_name;
