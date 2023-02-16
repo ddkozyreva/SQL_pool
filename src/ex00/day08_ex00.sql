@@ -5,7 +5,7 @@ update
     pizzeria
 set
     rating = 5
-WHERE
+where
     name = 'Pizza Hut';
 
 select

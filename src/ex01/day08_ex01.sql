@@ -12,7 +12,7 @@ update
     pizzeria
 set
     rating = 4
-WHERE
+where
     name = 'Pizza Hut';
 
 commit;
@@ -31,7 +31,7 @@ update
     pizzeria
 set
     rating = 3.6
-WHERE
+where
     name = 'Pizza Hut';
 
 commit;
