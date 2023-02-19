@@ -27,7 +27,7 @@ begin
         c.id = b_id
     where 
         c.updated >= b_date
-    order by c.updated desc
+    order by c.updated asc
     limit 1
     into max_date_rate;
     return coalesce(min_date_rate, max_date_rate);
