@@ -49,7 +49,7 @@ final_sums as (
         user_id,
         case
             when u.name is null then 'not defined'
-            else u.name
+            else u.namep
         end name,
         case
             when u.lastname is null then 'not defined'
