@@ -46,10 +46,9 @@ sums_with_rates as (
 ),
 final_sums as (
     select
-        user_id,
         case
             when u.name is null then 'not defined'
-            else u.namep
+            else u.name
         end name,
         case
             when u.lastname is null then 'not defined'
