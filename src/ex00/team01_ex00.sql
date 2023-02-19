@@ -14,7 +14,10 @@ select
         when c.name is null then 'not defined'
         else c.name
     end currency_name,
-    c.rate_to_usd
+    case
+        when c.rate_to_usd is null then 1
+        else c.rate_to_usd
+    end rate_to_usd
 from
     balance b
     left join public .user u on u.id = b.user_id
