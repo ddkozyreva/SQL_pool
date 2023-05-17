@@ -1,5 +1,5 @@
 #!/bin/bash
-dest="day_00/"
+dest="day_01/"
 mkdir $dest
 mv CHANGELOG $dest
 mv README.md $dest
